@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Bywater</title>
+  <meta name="description" content="Patrick Bywater — personal site, profiles and software projects.">
+  <style>
+    :root{
+      --ink:#1f2a33; --muted:#5d6b75; --line:#e4e8ec;
+      --accent:#2f5233; --accent-soft:#eef3ee; --gold:#c19a3e;
+      --card:#ffffff; --bg:#f7f8f6;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink); background:var(--bg); line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:680px; margin:0 auto; padding:64px 22px 80px}
+    header{margin-bottom:8px}
+    h1{
+      font-size:40px; letter-spacing:-0.5px; margin:0 0 6px;
+      font-weight:700;
+    }
+    .tagline{color:var(--muted); font-size:18px; margin:0 0 32px}
+    h2{
+      font-size:13px; text-transform:uppercase; letter-spacing:.09em;
+      color:var(--muted); font-weight:700; margin:38px 0 14px;
+    }
+    .links{display:flex; flex-direction:column; gap:10px}
+    a.card{
+      display:flex; align-items:center; gap:14px; text-decoration:none;
+      background:var(--card); border:1px solid var(--line); border-radius:12px;
+      padding:15px 18px; color:var(--ink); transition:border-color .15s, transform .12s, box-shadow .15s;
+    }
+    a.card:hover{
+      border-color:var(--accent); transform:translateY(-1px);
+      box-shadow:0 4px 14px rgba(47,82,51,.08);
+    }
+    .card .label{font-weight:600}
+    .card .sub{color:var(--muted); font-size:14px; margin-top:1px}
+    .card .text{flex:1; min-width:0}
+    .card .arrow{color:var(--muted); font-size:18px}
+    .ico{
+      width:38px; height:38px; flex:none; border-radius:9px;
+      display:flex; align-items:center; justify-content:center;
+      background:var(--accent-soft); color:var(--accent); font-weight:700; font-size:15px;
+    }
+    footer{margin-top:54px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:18px}
+    footer a{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Patrick Bywater</h1>
+      <!-- EDIT THIS LINE: a sentence about yourself, as much or little as you like -->
+      <p class="tagline">Chartered accountant and company director — and, in semi-retirement, a builder of small software tools.</p>
+    </header>
+
+    <h2>Find me</h2>
+    <div class="links">
+      <a class="card" href="https://www.linkedin.com/in/patrick-bywater-9704b913/" target="_blank" rel="noopener">
+        <span class="ico">in</span>
+        <span class="text"><span class="label">LinkedIn</span><div class="sub">Professional profile</div></span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="card" href="https://www.marpat.co.uk/meet-the-team/" target="_blank" rel="noopener">
+        <span class="ico">M</span>
+        <span class="text"><span class="label">Marpat — Meet the team</span><div class="sub">marpat.co.uk</div></span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="card" href="https://www.facebook.com/patrick.bywater" target="_blank" rel="noopener">
+        <span class="ico">f</span>
+        <span class="text"><span class="label">Facebook</span><div class="sub">Personal profile</div></span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <!-- ===========================================================
+         PROJECTS — to add a new one later, copy one <a class="card">…</a>
+         block below, change the href, the label, and the sub line. That's it.
+         =========================================================== -->
+    <h2>Software projects</h2>
+    <div class="links">
+      <a class="card" href="https://ladders.sandalltc.co.uk" target="_blank" rel="noopener">
+        <span class="ico" style="background:#eef3ee;color:#2f5233">SL</span>
+        <span class="text"><span class="label">Sandal LTC — Tennis Ladder</span><div class="sub">A live ladder &amp; court-booking platform for Sandal Lawn Tennis Club</div></span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="card" href="https://leedstennisleague.org.uk" target="_blank" rel="noopener">
+        <span class="ico" style="background:#f5efe0;color:#9a7a26">LT</span>
+        <span class="text"><span class="label">Leeds Tennis League</span><div class="sub">League website — fixtures, results, honours and club directory</div></span>
+        <span class="arrow">↗</span>
+      </a>
+      <!-- Add the next project here when it's ready to be public. -->
+    </div>
+
+    <footer>
+      <!-- EDIT the year if you like -->
+      © <span id="yr"></span> Patrick Bywater · patrickbywater.com
+    </footer>
+  </div>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
